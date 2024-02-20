@@ -1,0 +1,151 @@
+@import url(https://fonts.google.com/specimen/Karla);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* div-container holding the body contents*/
+.container{
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 1rem 0.1rem 0.7rem 0.1rem rgba(124, 122, 122, 0.25);
+    width: 800px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla',sans-serif;
+    font-weight: 400, 700;
+    background: hsl(204, 43%, 93%);
+    font-size: 16px;
+    padding: 0;
+    min-height: 100vh;
+    justify-content: center !important;
+    align-items: center;
+
+}
+.header{
+    padding: 50px;
+    font-size: large;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 25px;
+    opacity: 1.0
+}
+.container h2{
+    font-weight: bold;
+    color: hsl(71, 73%, 54%)
+}
+.header p{
+    font-weight: bold;
+    color: hsl(218,22%,67%);
+    line-height: 30px;
+}
+
+
+.grid-container{
+    display: flex;
+    color: white;
+   /* grid-template-columns: auto auto auto;
+    grid-gap: 0;
+    
+    justify-content: center;
+    overflow: hidden;
+    max-width: 1440px;
+    width: 100%;*/
+    
+}
+ /*monthly subscription section*/
+.container .price-grid{
+    padding: 80px;
+    background:  hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+    color: fff;
+    row-gap: none;
+    
+}
+
+.price-grid h3{
+    padding-bottom: 30px;
+}
+
+.price{
+    display: inline-flex;
+}
+/*why us section*/
+.container .why-grid{
+    background: hsla(179, 62%, 43%, 0.7);
+    padding: 60px;
+    color: fff;
+}
+
+.why-grid h3{
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+ ul{
+    font-size: 16px;
+    list-style-type: none;
+}
+li{
+    padding-bottom: 4px;
+}
+/*price styling-inline*/
+.price-grid .price{
+    font-size: 32px;
+}
+
+/*sign up button*/
+    
+.button{
+    background-color: hsl(71, 73%, 54%);
+    display: inline-block;
+    margin: 40px auto;
+    width: 100%;
+    padding: 0.8rem 2rem;
+    font-size: 16px;
+    font-weight: 800;
+    border: 3px solid  hsl(71, 73%, 54%);
+    border-radius: 5px;
+    color: white;
+
+}
+.button:hover{
+    background:hsl(179, 62%, 43%);
+    color: cyan;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; }
+.attribution a { 
+        color: hsl(228, 45%, 44%); }
+footer{
+    display: none;
+}
+
+@media(min-width: 375px){
+    .why-grid, .price-grid{
+        width: 50%;
+    }
+}
+@media(max-width: 1440px){
+    .container{
+        width: 90%;
+        margin-top: 40px;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        column-gap: none;
+    }
+    .header{
+        padding-right: 25px;
+    }
+    .why-grid, .price-grid{
+        width: 100%;
+    }
+}
+
